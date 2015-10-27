@@ -21,11 +21,11 @@ class Cactus {
   void update (float gravity) {
     //makes cactus move
 
-  // draw a circle at bottom right corner of the screen
-  //       x    y    w   h
-  noStroke();
-  fill(255, 0, 0);
-  ellipse(x1, 175, 50, 50);
+    // draw a circle at bottom right corner of the screen
+    //       x    y    w   h
+    noStroke();
+    fill(255, 0, 0);
+    ellipse(x1, 175, 50, 50);
 
     // change the speed
     s1 = s1 + a1;
@@ -37,6 +37,14 @@ class Cactus {
     if (x1 < -25) {
       x1 = 900; // place off screen on right 
       s1 = -1;  // reset the speed (to avoid insanely fast movement)
+    }
+  }
+  {
+    //get x
+    //purpose: to return the x position of the cactus
+    float getX() {
+
+      return x1;
     }
   }
 }//end of class

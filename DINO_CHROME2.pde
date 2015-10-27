@@ -57,9 +57,9 @@ void draw() {
   text("distance is " + distance, 150, 100);
 
   //determine wether there is a hit
-  //float a = dinoY -175;
-  //float b = 50 - x1;
-  //distance = sqrt( pow(a, 2) + pow(b, 2) );
+  float a = dinoY -175;
+  float b = 50 - x1.getX();
+  distance = sqrt( pow(a, 2) + pow(b, 2) );
 
   //move the dino
   dinoA = dinoA + gravity;  //Change acceleration based on gravity
@@ -91,7 +91,6 @@ void draw() {
 
 
 // respond to keypress 
-
 void keyPressed() {
 
   dinoS = -7   ;
