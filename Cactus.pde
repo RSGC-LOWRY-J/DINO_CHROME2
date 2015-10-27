@@ -39,12 +39,10 @@ class Cactus {
       s1 = -1;  // reset the speed (to avoid insanely fast movement)
     }
   }
-  {
-    //get x
-    //purpose: to return the x position of the cactus
-    float getX() {
+  //get x
+  //purpose: to return the x position of the cactus
+  float getX() {
 
-      return x1;
-    }
+    return x1;
   }
 }//end of class
